@@ -1,0 +1,120 @@
+.section-index{
+  background-color: #E5E5E5;
+}
+.baners-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+.baners-line{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.baner-long{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 16px 24px;
+  width: 672px;
+}
+.baner-text{
+  max-width: 360px;
+  margin-right: 24px;
+  font-size: 16px;
+  font-family: 'Open Sans 400',sans-serif;
+  color: #212121;
+}
+.baner-text--yellow{
+  max-width: 350px;
+  margin-right: 24px;
+  font-size: 16px;
+  font-family: 'Arial',sans-serif;
+  font-weight: 400;
+  color: #101010;
+}
+.baner-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 6px 10px rgba(16, 17, 19, 0.1);
+  border-radius: 22px;
+  background-color: #FF7E4A;
+  padding: 10px 32px;
+  color: #fff;
+  font-family: 'Open Sans 700',sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.baner-text__strikeout{
+  text-decoration: line-through;
+  margin: 0 3px;
+}
+.baner-text__orange{
+  color: #FF7E4A;
+  font-family: 'Open Sans 700', sans-serif;
+}
+.baner-text__yellow{
+  color: #F6B100;
+  font-family: 'Open Sans 700', sans-serif;
+}
+.baner-yellow-button{
+  padding: 12px 36px;
+  background-color: #F6B100;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.br-16{
+  border-radius: 16px;
+}
+@media screen and (max-width: 768px) {
+  .baner-long{
+    width: 100%;
+  }
+  .baner-text,.baner-text--yellow{
+    width: 60%;
+  }
+  .baner-button{
+    font-size: 14px;
+    padding: 10px 32px;
+    min-width: 145px;
+    height: 40px;
+  }
+  .baner-yellow-button{
+    padding: 8px 32px;
+    height: 38px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .baner-long{
+    flex-direction: column;
+    padding: 16px 20px 20px 20px;
+  }
+  .baner-text{
+    width: 100%;
+    max-width: 85%;
+    margin: auto auto 16px 0;
+    font-size: 14px;
+  }
+  .baner-text--yellow{
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    align-items: center;
+    text-align: center;
+
+  }
+  .br-16{
+    padding: 16px 12px;
+  }
+}
